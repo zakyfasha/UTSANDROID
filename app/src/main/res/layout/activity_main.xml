@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_layout_id">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="PENDAFTARAN"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="SISWA(I) SMK PEMBANGUNAN 2"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:layout_gravity="left"
+                android:text="Sebelum Mengisi Formulir ini diharapkan wali murud melengkapi  persyaratan yang ditentukan"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+            <EditText
+                android:id="@+id/namadepan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Nama Depan"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/namabelakang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Nama Belakang"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/telepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Telepon"
+                android:padding="10dp">
+            </EditText>
+
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="SMP"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="SMP1"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="MTS"/>
+            </RadioGroup>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/jenis_kelamin"
+                android:id="@+id/jKelamin">
+
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Pilihan Sekolah alternatif"
+                android:padding="10dp"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMK Dwidaya"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMU DON Boso"/><CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMK Merah Putih"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMK Sutarmadja"/>
+
+            <requestFocus />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
